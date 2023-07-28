@@ -1,6 +1,5 @@
-import { Character } from "../../public/fma-data";
+import { Character } from "../../fma-data";
 import "../css/character-cards.css";
-//import { data } from "../../public/fma-data";
 
 export function Card({ input }: { input: Character }) {
   return (

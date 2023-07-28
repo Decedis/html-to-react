@@ -1,4 +1,5 @@
-import { Character } from "../../public/fma-data.ts";
+import { Character } from "../../fma-data.ts";
+import "../css/character-ratings.css";
 
 type TableProp = {
   input: Character;

@@ -1,6 +1,3 @@
-// leaving this code here for debugging
-// vite complains about using this directory for storing these values
-// the file was copied to the root directory to satisfy the error.
 export type Character = {
   name: string;
   skillset: string[];

@@ -1,16 +1,16 @@
 import React from "react";
-import "../css/character-cards.css";
-import { data } from "../../public/fma-data";
+import { Character } from "../../fma-data";
 import { Card } from "./Card";
 import { Table } from "./Table";
 
 type SectionProps = {
   id: string;
+  data: Character[];
 };
 
 export class Section extends React.Component<SectionProps> {
   render() {
-    const { id } = this.props;
+    const { id, data } = this.props;
     let currentClass = "dark";
     if (id === "character-ratings") {
       return (
