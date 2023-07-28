@@ -3,7 +3,8 @@ import "./css/style.css";
 import "./css/reset.css";
 import "./css/header.css";
 
-import { data } from "../public/fma-data";
+//import { data } from "../public/fma-data.ts"; //the root file doesn't work? Odd behavior
+import { data } from "../fma-data.ts";
 import { Section } from "./components/Section";
 import { Nav } from "./components/Nav.tsx";
 
