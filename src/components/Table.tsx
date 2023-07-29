@@ -2,18 +2,18 @@ import { Character } from "../../fma-data.ts";
 import "../css/character-ratings.css";
 
 type TableProp = {
-  input: Character;
+  character: Character;
   classCSS: string;
 };
 
 export function Table(object: TableProp) {
-  const { input, classCSS } = object;
-  if (input.votes >= 90) {
+  const { character, classCSS } = object;
+  if (character.votes >= 90) {
     return (
       <tr className={classCSS}>
-        <td>{input.name}</td>
-        <td>{input.skillset}</td>
-        <td>{input.votes}</td>
+        <td>{character.name}</td>
+        <td>{character.skillset}</td>
+        <td>{character.votes}</td>
       </tr>
     );
   }
