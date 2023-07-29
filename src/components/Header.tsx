@@ -2,7 +2,7 @@ type NavElmType = {
   links: string[];
 };
 
-export function Nav(list: NavElmType) {
+export function Header(list: NavElmType) {
   return (
     <header>
       <h1>Fullmetal Alchemist</h1>

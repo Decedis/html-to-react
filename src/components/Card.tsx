@@ -1,14 +1,14 @@
 import { Character } from "../../fma-data";
 import "../css/character-cards.css";
 
-export function Card({ input }: { input: Character }) {
+export function Card({ character }: { character: Character }) {
   return (
     <div className="card">
       <div className="card-titles">
-        <h3>{input.name}</h3>
+        <h3>{character.name}</h3>
       </div>
-      <img src={input.imageUrl} alt="" />
-      <p> {input.background} </p>
+      <img src={character.imageUrl} alt="" />
+      <p> {character.background} </p>
     </div>
   );
 }
