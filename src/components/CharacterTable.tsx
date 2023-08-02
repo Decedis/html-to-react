@@ -16,7 +16,8 @@ export class CharacterTable extends Section {
               <th>Votes</th>
             </tr>
             {characters
-              .sort((a, b) => (a.votes < b.votes ? 1 : 0)) // a.votes - b.votes
+              .slice()
+              .sort((a, b) => (a.votes < b.votes ? 1 : -1)) // a.votes - b.votes
               .map((tableElm) => {
                 currentClass = currentClass === "dark" ? "light" : "dark";
                 return <Table character={tableElm} classCSS={currentClass} />;
